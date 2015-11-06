@@ -1,0 +1,26 @@
+$background: red;
+
+body {
+	background: $background;
+}
+
+.test {
+	display: table;
+	margin: 0 auto;
+}
+
+.active {
+	background: #b1b1b1;
+}
+
+.green {
+	background: green;
+}
+
+.blue {
+	background: blue;
+}
+
+.red {
+	background: red;
+}

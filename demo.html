@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+	<title>Demo</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+
+	<div class="test">
+		<button class="firstButton green margin-top active">first #</button>
+		<button class="secondButton">second #</button>
+		<button class="fourthButton">fourth </button>
+	</div>
+
+	<button class="thirdButton">third #</button>
+
+<script src="scripts/selectorHandler.js"></script>
+
+<script>
+var selectorHandler = new ClassManager('.test', {
+	firstButton: 'green',
+	secondButton: 'blue',
+	thirdButton: 'red'
+});
+</script>
+</body>
+</html>
