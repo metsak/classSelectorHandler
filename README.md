@@ -10,9 +10,11 @@
 
 2. Init the object with container and elements object arguments.
 
-```<script>
+```
+<script>
   var selectorHandler = new SelectorHandler('.container', {
-     myElement: classOnToggle1,
-     mySecondElement: classOnToggle2
+    myElement: classOnToggle1,
+    mySecondElement: classOnToggle2
   });
-</script>```
+</script>
+```
