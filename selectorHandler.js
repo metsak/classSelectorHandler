@@ -34,11 +34,12 @@ var SelectorHandler = function(el, selectors) {
     this.init();
   };
 
-  classManager.prototype.init = function() {
+  selectorHandler.prototype.init = function() {
     eventListener(el, 'click', getSelectors, false);
   };
 
 
-  return new selectorHandlerad(el, selectors);
+  return new selectorHandler(el, selectors);
 };
+
 
