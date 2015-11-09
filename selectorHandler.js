@@ -6,16 +6,13 @@ var SelectorHandler = function(el, selectors) {
   },
 
   getSelectors = function (evt) {
-    var elemSelectors;
-
-    // Check that clicked element is not container.
     if (evt.target !== evt.currentTarget) {
-      elemSelectors = evt.target.getAttribute('class');
-      toggleSelector(elemSelectors, selectors);
+      var elemSelectors = evt.target.getAttribute('class');
+      toggleSelector(elemSelectors);
     }
   },
 
-  toggleSelector = function (elemSelectors, selectors) {
+  toggleSelector = function (elemSelectors) {
     for (var el in selectors) {
       if (elemSelectors.indexOf(el) > -1) {
         var arr = elemSelectors.split(' ');
@@ -23,7 +20,7 @@ var SelectorHandler = function(el, selectors) {
         for (var i = 0; i < arr.length; i++) {
           if (el === arr[i]) {
             var elem = document.querySelector('.' + el);
-            elem.classList.toggle(selectors[el])
+            elem.classList.toggle(selectors[el]);
           }
         }
       }
@@ -37,7 +34,6 @@ var SelectorHandler = function(el, selectors) {
   selectorHandler.prototype.init = function() {
     eventListener(el, 'click', getSelectors, false);
   };
-
 
   return new selectorHandler(el, selectors);
 };
