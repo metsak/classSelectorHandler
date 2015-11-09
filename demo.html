@@ -6,21 +6,26 @@
 </head>
 <body>
 
-<div class="test">
-  <button class="firstButton green margin-top active">first #</button>
-  <button class="secondButton">second #</button>
-  <button class="fourthButton">fourth </button>
-</div>
+<div class="container">
 
-<button class="thirdButton">third #</button>
+  <div class="first box randomClass">
+  </div>
+
+  <div class="second box">
+  </div>
+
+  <div class="third box">
+  </div>
+
+</div>
 
 <script src="selectorHandler.js"></script>
 
 <script>
-  var selectorHandler = new SelectorHandler('.test', {
-    firstButton: 'green',
-    secondButton: 'blue',
-    thirdButton: 'red'
+  var selectorHandler = new SelectorHandler('.container', {
+    first: 'green',
+    second: 'blue',
+    third: 'red',
   });
 </script>
 </body>
