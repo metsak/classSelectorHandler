@@ -1,3 +1,19 @@
-.green { background: green; }
-.red { background: red; }
-.blue { background: blue; }
+.container {
+  display: table;
+  margin: 50px auto;
+}
+
+.green { background: green !important; }
+.red { background: red !important; }
+.blue { background: blue !important; }
+
+div.box {
+  width: 100px;
+  height: 100px;
+  background: #1b1b1b;
+  padding: 10px;
+  color: #f7f7f7;
+  float: left;
+  margin: 10px; 
+  cursor: pointer;
+}
